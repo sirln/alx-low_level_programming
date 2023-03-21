@@ -8,7 +8,7 @@ int main(void)
 {
 	int l = 1, n = 2, s, count = 2;
 
-	printf ("%d, %d, ", l, n);
+	printf("%d, %d, ", l, n);
 
 	while (count < 98)
 	{
