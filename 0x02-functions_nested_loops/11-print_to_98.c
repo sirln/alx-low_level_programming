@@ -29,13 +29,13 @@ void print_to_98(int s)
 	else
 	{
 		for (l = s; l <= 98; l++)
-                {
-                        printf("%d", l);
-                        if (l != 98)
-                        {
-                                printf(", ");
-                        }
-                }
+		{
+			printf("%d", l);
+			if (l != 98)
+			{
+				printf(", ");
+			}
+		}
 	}
 	printf("\n");
 }
