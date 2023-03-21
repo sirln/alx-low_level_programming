@@ -1,6 +1,6 @@
 #include  "main.h"
 /**
- *print_alphabet_x10 -  function to print the alphabets 10x
+ *_islower -  checks for lowercase character.
  *
  */
 int _islower(int c)
