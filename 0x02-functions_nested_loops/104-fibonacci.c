@@ -21,7 +21,7 @@ int main(void)
 		}
 		else
 		{
-			print("\n");
+			printf("\n");
 		}
 
 		l = n;
