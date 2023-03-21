@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	double l = 1, n = 2, s, count = 2;
+	int l = 1, n = 2, s, count = 2;
 
 	printf ("%d, %d, ", l, n);
 
