@@ -16,7 +16,7 @@ int main(void)
 
 	while (counter < 98)
 	{
-		counter ++
+		counter ++;
 		printf("%.0f", n);
 		l = s;
 		s = n;
