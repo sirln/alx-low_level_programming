@@ -7,6 +7,7 @@
 int main(void)
 {
 	int counter = 2;
+
 	float l = 1;
 	float s = l + 1;
 	float n = l + s;
