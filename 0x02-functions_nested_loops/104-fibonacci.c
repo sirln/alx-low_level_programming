@@ -14,18 +14,17 @@ int main(void)
 
 	printf("%lu, ", a);
 	printf("%lu, ", b);
-	while (counter < 98)
+	while (counter < 91)
 	{
-		/* counter++;*/
+		counter++;
 		printf("%lu", c);
 		a = b;
 		b = c;
 		c = a + b;
-		if (counter < 98)
+		if (counter < 91)
 		{
 			printf(", ");
 		}
-		counter++;
 	}
 	printf("\n");
 	return (0);
