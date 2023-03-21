@@ -6,14 +6,15 @@
  */
 int main(void)
 {
-	double l = 1, n = 2, s, count = 2;
+	float l = 1, n = 2, s;
+	int count = 2;
 
-	printf("%f, %f, ", l, n);
+	printf("%.0f, %.0f, ", l, n);
 
 	while (count < 98)
 	{
 		s = l + n;
-		printf("%f", s);
+		printf("%.0f", s);
 
 		if (count <= 98)
 		{
