@@ -11,12 +11,12 @@ int main(void)
 	float s = l + 1;
 	float n = l + s;
 
-	printf("%.0f", l);
-	printf("%.0f", s);
+	printf("%.0f, ", l);
+	printf("%.0f, ", s);
 
 	while (counter < 98)
 	{
-		counter ++;
+		counter++;
 		printf("%.0f", n);
 		l = s;
 		s = n;
