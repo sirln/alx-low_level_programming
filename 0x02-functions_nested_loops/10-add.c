@@ -1,10 +1,11 @@
 #include  "main.h"
 /**
- *_abs -  computes the absolute value of an integer.
+ *add - adds two integers and returns the result.
  *
- *@n: parameter
+ *@s: parameter
+ *@m: parameter
  *
- *Return: returns value of n
+ *Return: returns sum of parameters passed
  *
  */
 int add(int s, int m)
