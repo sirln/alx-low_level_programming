@@ -2,31 +2,32 @@
 /**
  * main - main function
  *
- * Return: 0
+ * Return: always 0
  */
 int main(void)
 {
-	int counter = 2;
+	int l = 1, n = 2, s, count =2;
 
-	float l = 1;
-	float s = l + 1;
-	float n = l + s;
+	printf ("%d, %d, ", l, n);
 
-	printf("%.0f, ", l);
-	printf("%.0f, ", s);
-
-	while (counter < 98)
+	while (count < 98)
 	{
-		counter++;
-		printf("%.0f", n);
-		l = s;
-		s = n;
-		n = l + s;
-		if (counter < 98)
+		s = l + n;
+		printf("%d", s);
+
+		if (count <= 98)
 		{
 			printf(", ");
 		}
+		else
+		{
+			print("\n");
+		}
+
+		l = n;
+		n = s;
+		count++;
 	}
-	printf("\n");
+
 	return (0);
 }
