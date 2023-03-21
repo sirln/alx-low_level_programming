@@ -44,4 +44,10 @@ int _abs(int);
   *
   */
 
+int print_last_digit(int);
+/**
+  *  prints the last digit of a number.
+  *
+  */
+
 #endif
