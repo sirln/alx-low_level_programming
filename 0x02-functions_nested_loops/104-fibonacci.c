@@ -15,14 +15,14 @@ int main(void)
 	printf("%lu, ", l);
 	printf("%lu, ", s);
 
-	while (counter < 98)
+	while (count < 98)
 	{
-		counter++;
+		count++;
 		printf("%lu", n);
 		l = s;
 		s = n;
 		n = l + s;
-		if (counter < 98)
+		if (count < 98)
 		{
 			printf(", ");
 		}
