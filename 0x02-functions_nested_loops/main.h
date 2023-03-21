@@ -68,4 +68,10 @@ int add(int, int);
   *
   */
 
+void print_to_98(int n);
+/**
+  * prints all natural numbers from n to 98, followed by a new line.
+  *
+  */
+
 #endif
