@@ -15,7 +15,7 @@ int main(void)
 	{
 		if (n % 2 == 0)
 		{
-			counter = counter + c;
+			counter = counter + n;
 		}
 		l = s;
 		s = n;
