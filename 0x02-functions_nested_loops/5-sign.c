@@ -1,8 +1,11 @@
 #include  "main.h"
 /**
  *print_sign -  prints the sign of a number.
+ *
  *@n: parameter
- *Return: returns 1 or -1 if value passed meets the condition, otherwise returns 0
+ *
+ *Return: returns 1 / -1 if value passed meets the condition, else returns 0
+ *
  */
 int print_sign(int n)
 {
