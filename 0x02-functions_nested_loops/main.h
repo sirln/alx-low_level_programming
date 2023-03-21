@@ -32,4 +32,10 @@ int _isalpha(int c);
   *
   */
 
+int print_sign(int n);
+/**
+  *  prints the sign of a number.
+  *
+  */
+
 #endif
