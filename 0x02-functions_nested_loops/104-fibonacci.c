@@ -2,33 +2,31 @@
 /**
  * main - main function
  *
- * Return: always 0
+ * Return: 0
  */
 int main(void)
 {
-	unsigned long l = 1, n = 2, s;
 	int count = 2;
 
-	printf("%lu, %lu, ", l, n);
+	unsigned long l = 1;
+	unsigned long s = l + 1;
+	unsigned long n = l + s;
 
-	while (count < 98)
+	printf("%lu, ", l);
+	printf("%lu, ", s);
+
+	while (counter < 98)
 	{
-		s = l + n;
-		printf("%lu", s);
-
-		if (count <= 98)
+		counter++;
+		printf("%lu", n);
+		l = s;
+		s = n;
+		n = l + s;
+		if (counter < 98)
 		{
 			printf(", ");
 		}
-		else
-		{
-			printf("\n");
-		}
-
-		l = n;
-		n = s;
-		count++;
 	}
-
+	printf("\n");
 	return (0);
 }
