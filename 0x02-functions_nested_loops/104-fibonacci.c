@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-	int l = 1, n = 2, s, count = 2;
+	double l = 1, n = 2, s, count = 2;
 
-	printf("%d, %d, ", l, n);
+	printf("%f, %f, ", l, n);
 
 	while (count < 98)
 	{
 		s = l + n;
-		printf("%d", s);
+		printf("%f", s);
 
 		if (count <= 98)
 		{
