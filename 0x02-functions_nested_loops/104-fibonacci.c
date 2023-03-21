@@ -6,15 +6,15 @@
  */
 int main(void)
 {
-	float l = 1, n = 2, s;
+	unsigned long l = 1, n = 2, s;
 	int count = 2;
 
-	printf("%.0f, %.0f, ", l, n);
+	printf("%lu, %lu, ", l, n);
 
 	while (count < 98)
 	{
 		s = l + n;
-		printf("%.0f", s);
+		printf("%lu", s);
 
 		if (count <= 98)
 		{
