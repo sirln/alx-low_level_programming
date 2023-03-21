@@ -6,23 +6,22 @@
  */
 int main(void)
 {
-	int count = 2;
+	int counter = 2;
 
-	unsigned long l = 1;
-	unsigned long s = l + 1;
-	unsigned long n = l + s;
+	float a = 1;
+	float b = a + 1;
+	float c = a + b;
 
-	printf("%lu, ", l);
-	printf("%lu, ", s);
-
-	while (count < 98)
+	printf("%.0f, ", a);
+	printf("%.0f, ", b);
+	while (counter < 98)
 	{
-		count++;
-		printf("%lu", n);
-		l = s;
-		s = n;
-		n = l + s;
-		if (count < 98)
+		counter++;
+		printf("%.0f", c);
+		a = b;
+		b = c;
+		c = a + b;
+		if (counter < 98)
 		{
 			printf(", ");
 		}
