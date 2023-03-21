@@ -21,6 +21,6 @@ int main(void)
 		s = n;
 		n = l + n;
 	}
-	printf("\n", counter);
+	printf("%d\n", counter);
 	return (0);
 }

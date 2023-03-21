@@ -8,8 +8,8 @@ int main(void)
 {
 	int counter = 2;
 	float l = 1;
-	long int s = l + 1;
-	long int n = l + s;
+	float s = l + 1;
+	float n = l + s;
 
 	printf("%.0f", l);
 	printf("%.0f", s);
