@@ -140,4 +140,10 @@ void print_triangle(int size);
   * size is the size of the triangle
   */
 
+void print_number(int n);
+/**
+  * function that prints an integer.
+  *
+  */
+
 #endif
