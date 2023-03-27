@@ -12,7 +12,7 @@ void puts_half(char *str)
 	int n_odd = (_strlen(str) - 1) % 2;
 	int l = n + 1;
 
-	if(n_odd == 1)
+	if (n_odd == 1)
 	{
 		while (str[l] != '\0')
 		{
