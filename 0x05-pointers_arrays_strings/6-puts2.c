@@ -13,13 +13,6 @@ void puts2(char *str)
 	{
 		_putchar(str[l]);
 		l += 2;
-		/**
-		*if (l % 2 == 0)
-		*{
-		*	_putchar(str[l]);
-		*}
-		*l++;
-		*/
 	}
 	_putchar('\n');
 }
