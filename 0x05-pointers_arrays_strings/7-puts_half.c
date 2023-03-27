@@ -9,15 +9,9 @@
  */
 void puts_half(char *str)
 {
-	int n_even = _strlen(str) / 2;
 	int n_odd = (_strlen(str) - 1) / 2;
 	int l = n_odd;
 
-	while (n_even < _strlen(str))
-	{
-		_putchar(str[n_even]);
-		n_even++;
-	}
 	if ((_strlen(str) % 2) == 1)
 	{
 		while (l < _strlen(str))
