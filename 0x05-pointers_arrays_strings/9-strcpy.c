@@ -13,10 +13,10 @@ char *_strcpy(char *dest, char *src)
 {
 	int l = 0;
 
-	while(l <= _strlen(src))
+	while (l <= _strlen(src))
 	{
 		dest[l] = src[l];
 		l++;
 	}
-	return(dest);
+	return (dest);
 }
