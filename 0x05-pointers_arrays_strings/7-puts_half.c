@@ -9,6 +9,7 @@
  */
 void puts_half(char *str)
 {
+	int n_even = _strlen(str) / 2;
 	int n_odd = (_strlen(str) - 1) / 2;
 	int l = n_odd + 1;
 
@@ -18,6 +19,14 @@ void puts_half(char *str)
 		{
 			_putchar(str[l]);
 			l++;
+		}
+	}
+	else
+	{
+		while (n_even < _strlen(str))
+		{
+			_putchar(str[n_even]);
+			n_even++;
 		}
 	}
 	_putchar('\n');
