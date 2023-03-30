@@ -13,10 +13,7 @@ char *rot13(char *enc)
 		{
 			enc[l] += 13;
 		}
-		else if ((enc[l] >= 'n' && enc[l] <= 'z') || (enc[l] >= 'N' && enc[l] <= 'Z'))
-		{
-			enc[l] -= 13;
-		}
+		enc[l] -= 13;
 		l++;
 
 	}
