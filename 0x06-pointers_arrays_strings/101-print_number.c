@@ -6,38 +6,17 @@
  */
 void print_number(int n)
 {
-	unsigned int abs;
-	int mult = 1;
-	int abSCount;
-	unsigned int i;
-	int c = 0;
+	unsigned int num = n;
 
-	if (n == 0)
-	{
-		_putchar('0');
-	}
 	if (n < 0)
 	{
 		_putchar('-');
-		n += 1;
-		n *= -1;
-		n++;
+		num = -num;
 	}
-	abs = n;
-	abSCount = n;
-
-	while (abSCount > 0)
+	if (num / 10 != 0)
 	{
-		abSCount /= 10;
-		c++;
+		print_number(num / 10);
 	}
-	for (i = 0; i < c - 1; i++)
-		mult *= 10;
+	_putchar((num % 10) + '0');
 
-	for (i = 0; i < c; i++)
-	{
-		_putchar((abs / mult) + '0');
-		abs = abs % mult;
-		mult /= 10;
-	}
 }
