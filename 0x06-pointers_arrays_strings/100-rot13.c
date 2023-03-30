@@ -5,17 +5,21 @@
  */
 char *rot13(char *enc)
 {
-	int l = 0;
+	int l, n;
 
-	while (enc[l] != '\0')
+	char enc_chars[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char enc_map[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	for (l = 0; enc[l] != '\0'; l++)
 	{
-		if ((enc[l] >= 'a' && enc[l] <= 'm') || (enc[l] >= 'A' && enc[l] <= 'M'))
+		for (n = 0; enc_chars[n] != '\0'; n++)
 		{
-			enc[l] += 13;
+			if (enc[l] == enc_chars[n])
+			{
+				enc[l] = enc_map[n];
+				break;
+			}
 		}
-		enc[l] -= 13;
-		l++;
-
 	}
 	return (enc);
 }
