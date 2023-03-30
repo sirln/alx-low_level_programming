@@ -6,10 +6,10 @@
  */
 void print_number(int n)
 {
-	int abs;
+	unsigned int abs;
 	int mult = 1;
 	int abSCount;
-	int i;
+	unsigned int i;
 	int c = 0;
 
 	if (n == 0)
