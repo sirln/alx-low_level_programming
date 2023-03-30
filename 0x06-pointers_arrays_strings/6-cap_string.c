@@ -1,6 +1,6 @@
 /**
  *cap_string - capitalizes all words of a string
- *
+ *@cw: parameter
  *Return: uppercase words of a string
  */
 char *cap_string(char *cw)
@@ -16,13 +16,12 @@ char *cap_string(char *cw)
 		}
 		caps = 0;
 
-		if (cw[n] == ' ' || cw[n] == '\t' || cw[n] == '\n' ||
-		 cw[n] == ',' || cw[n] == ';' || cw[n] == '.' ||
-		 cw[n] == '!' || cw[n] == '?' || cw[n] == '"' ||
-		 cw[n] == '(' || cw[n] == ')' || cw[n] == '{' ||
-		 cw[n] == '}')
+		if (cw[n] == ' ' || cw[n] == '\t' || cw[n] == '\n' \
+		|| cw[n] == ',' || cw[n] == ';' || cw[n] == '.' \
+		|| cw[n] == '!' || cw[n] == '?' || cw[n] == '"' \
+		|| cw[n] == '(' || cw[n] == ')' || cw[n] == '{' || cw[n] == '}')
 		{
-            		caps = 1;
+			caps = 1;
 		}
 		n++;
 	}
