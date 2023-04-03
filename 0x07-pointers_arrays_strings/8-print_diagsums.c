@@ -14,10 +14,10 @@ void print_diagsums(int *a, int size)
 	int t1 = 0;
 	int t2 = 0;
 
-	for (;l < size; l++)
+	for (; l < size; l++)
 	{
 		t1 += a[l * size + l];
-		t2 += a[l * size + (size -l - 1)];
+		t2 += a[l * size + (size - l - 1)];
 	}
 
 	printf("%d, %d\n", t1, t2);
