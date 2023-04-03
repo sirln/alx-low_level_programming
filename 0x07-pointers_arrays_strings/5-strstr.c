@@ -9,6 +9,9 @@
 
 char *_strstr(char *haystack, char *needle)
 {
+	int l = 0;
+	int s = 0;
+
 	if (*needle == '\0')
 	{
 		return (haystack);
@@ -16,24 +19,22 @@ char *_strstr(char *haystack, char *needle)
 
 	while (*haystack)
 	{
-		char *n = needle;
-
-		if (*haystack == *n)
+		if (haystack[l] == *needle)
 		{
-			while (*n)
+			while (*neddle)
 			{
-				if (*haystack != *n)
+				if (haystack[l + s] != needle[s])
 				{
 					break;
 				}
-				n++;
+				s++;
 			}
-			if (*n == '\0')
+			if (needle[s] == '\0')
 			{
-				return (haystack);
+				return (haystack + l);
 			}
 		}
-		haystack++;
+		l++;
 	}
 
 	return ('\0');
