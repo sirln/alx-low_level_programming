@@ -20,13 +20,17 @@ char *_strstr(char *haystack, char *needle)
 
 		if (*haystack == *n)
 		{
-			while (*haystack == *n)
+			while (*n)
 			{
-				if (*(n + !) == '0')
+				if (*haystack != *n)
 				{
-					return (haystack);
+					break;
 				}
 				n++;
+			}
+			if (*n == '\0')
+			{
+				return (haystack);
 			}
 		}
 		haystack++;
