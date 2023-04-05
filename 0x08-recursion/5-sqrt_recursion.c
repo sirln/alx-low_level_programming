@@ -1,31 +1,46 @@
 #include "main.h"
+
+int _sqrt(int n, int l, int s);
+
 /**
- *_pow_recursion -  function that returns the
- *	value of x raised to the power of y.
+ *_sqrt -  function that returns to increment l and s
+ *
+ *@n: parameter
+ *@l: parameter
+ *@s: parameter
+ *
+ *Return: square root of n
+ */
+
+
+int _sqrt(int n, int l, int s)
+{
+	if (n < 0)
+		return (-1);
+
+	if (n == 0)
+		return (s);
+
+	return (_sqrt(n - l, l + 2, s + 1));
+}
+
+/**
+ *_sqrt_recursion -  function that returns
+ *	the natural square root of a number.
  *
  *@n: parameter
  *
- *Return: factorial of n
+ *Return: n
  */
+
+
 int _sqrt_recursion(int n)
 {
 	int l = 1;
 	int s = 0;
 
-	if (n < 0)
-		return -1;
+	n = _sqrt(n, l, s);
+	return (n);
 
-	if (n == 0)
-		return 0;
-
-	while (n > 0)
-	{
-		n  -= l;
-		l += 2;
-		s++;
-	}
-	if (n == 0)
-		return s;
-	else
-		return -1;
 }
+
