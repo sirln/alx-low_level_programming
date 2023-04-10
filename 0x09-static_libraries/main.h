@@ -1,5 +1,5 @@
 #ifndef _MAIN_HEADER_FILE
-#define _MAIN_HEADER_FILE_
+#define _MAIN_HEADER_FILE
 
 
 int _putchar(char c);
