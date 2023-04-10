@@ -1,4 +1,4 @@
-#ifndef  _MAIN_HEADER_FILE
+#ifndef _MAIN_HEADER_FILE
 #define _MAIN_HEADER_FILE_
 
 
