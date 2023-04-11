@@ -27,10 +27,7 @@ int main(int argc, char **argv)
 			printf("Error\n");
 			return (1);
 		}
-		else
-		{
-			results = results + atoi(argv[l]);
-		}
+		results = results + atoi(argv[l]);
 		l++;
 	}
 	printf("%d\n", results);
