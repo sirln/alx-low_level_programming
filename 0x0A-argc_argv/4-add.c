@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 /**
-  *main - multiplies two numbers.
+  *main - adds positive numbers.
   *@argc : number of parameters/arguments
   *@argv : array of parameters/arguments
   *
-  * Return:  1;
+  * Return:  0 or 1;
   *
   */
 
@@ -33,6 +32,9 @@ int main(int argc, char **argv)
 		printf("%d\n", results);
 		return (0);
 	}
-	printf("%d\n", 0);
-	return (1);
+	else
+	{
+		printf("%d\n", 0);
+		return (1);
+	}
 }
