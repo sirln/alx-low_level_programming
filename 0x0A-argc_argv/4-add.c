@@ -20,22 +20,20 @@ int main(int argc, char **argv)
 		return (0);
 	}
 
-	if (argc > 1)
+	while (l < argc)
 	{
-		while (l < argc)
+		if (*argv[l] < '0' || *argv[l] > '9')
 		{
-			if (*argv[l] < '0' || *argv[l] > '9')
-			{
-				printf("Error\n");
-				return (1);
-			}
-			else
-			{
-				results = results + atoi(argv[l]);
-			}
-			l++;
+			printf("Error\n");
+			return (1);
 		}
-		printf("%d\n", results);
+		else
+		{
+			results = results + atoi(argv[l]);
+		}
+		l++;
 	}
+	printf("%d\n", results);
+
 	return (0);
 }
