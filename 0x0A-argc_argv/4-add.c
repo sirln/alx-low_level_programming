@@ -14,6 +14,11 @@ int main(int argc, char **argv)
 	int results = 0;
 	int l = 1;
 
+	if (argc == 1)
+	{
+		printf("%d\n", 0);
+	}
+
 	if (argc > 1)
 	{
 		while (l < argc)
@@ -30,8 +35,6 @@ int main(int argc, char **argv)
 			l++;
 		}
 		printf("%d\n", results);
-		return (0);
 	}
-	printf("%d\n", 0);
-	return (1);
+	return (0);
 }
