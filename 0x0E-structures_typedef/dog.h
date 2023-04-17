@@ -3,9 +3,11 @@
 
 /**
   * struct dog - structure name
-  * @name: dog name
-  * @owner: dog owner
-  * @age: dog age
+  * @name: First member
+  * @owner: Second member
+  * @age: Third member
+  *
+  *Description: dog structure
   *
   */
 
@@ -17,33 +19,13 @@ struct dog
 };
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
-/**
-  * function that initialize a variable of type struct dog
-  *
-  */
 
 void print_dog(struct dog *d);
-/**
-  * function that prints a struct dog
-  *
-  */
 
 typedef struct dog dog_t;
-/**
-  * Giving `struct dog` a new name `dog_t`
-  *
-  */
 
 dog_t *new_dog(char *name, float age, char *owner);
-/**
-  * function that creates a new dog.
-  *
-  */
 
 void free_dog(dog_t *d);
-/**
-  * function that frees dogs.
-  *
-  */
 
 #endif
