@@ -14,7 +14,7 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int l = 0, s = 0, x = 0, y = 0;
+	int l = 0, s = 0; x = 0, y = 0;
 	dog_t  *n_dog;
 	char *n, *o;
 
@@ -31,10 +31,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(n_dog);
 		return (0);
 	}
-	while (l < x)
+	for (; l < x; l++)
 	{
 		n[l] = name[l];
-		l++;
 	}
 	n[l++] = '\0';
 	n_dog->name = n;
@@ -46,7 +45,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(n_dog);
 		return (0);
 	}
-	while (s < y)
+	for (; s < y; s++)
 	{
 		o[s] = owner[s];
 		s++;
