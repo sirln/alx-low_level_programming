@@ -4,7 +4,7 @@
   *main - start of the program
   *
   *@argc: number of arguments
-  *@argv: number of arguments
+  *@argv: array of arguments
   *
   *Return: program exit status code
   *
