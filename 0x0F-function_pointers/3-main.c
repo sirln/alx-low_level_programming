@@ -12,8 +12,7 @@
 
 int main(int argc, char **argv)
 {
-	int l = atoi(argv[1]);
-	int n = atoi(argv[3]);
+	int l, n;
 	int (*get_op)(int, int);
 
 	if (argc != 4)
@@ -21,6 +20,9 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
+
+	l = atoi(argv[1]);
+	n = atoi(argv[3]);
 
 	get_op = get_op_func(argv[2]);
 
