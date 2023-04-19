@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 	int n = atoi(argv[3]);
 	int (*get_op)(int, int);
 
-	if (!(argc == 4))
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
