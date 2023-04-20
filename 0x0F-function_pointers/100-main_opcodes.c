@@ -32,12 +32,13 @@ int main(int argc, char **argv)
 
 	while (l < atoi(argv[1]))
 	{
-		printf("%.2x ", opcodes[l]);
+		printf("%.2x", opcodes[l]);
 
 		if (l == (atoi(argv[1]) - 1))
 		{
 			break;
 		}
+		printf(" ");
 
 		l++;
 	}
