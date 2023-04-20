@@ -36,7 +36,6 @@ void print_all(const char * const format, ...)
 				s = va_arg(args, char *);
 				if (!s)
 					s = "(nil)";
-					/*printf("%s(nill)", sep);*/
 
 				printf("%s%s", sep, s);
 				sep = ", ";
