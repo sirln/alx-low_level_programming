@@ -38,10 +38,7 @@ void print_all(const char * const format, ...)
 				{
 					printf("%s(nill)", sep);
 				}
-				else
-				{
-					printf("%s%s", sep, s);
-				}
+				printf("%s%s", sep, s);
 				sep = ", ";
 				break;
 			default:
