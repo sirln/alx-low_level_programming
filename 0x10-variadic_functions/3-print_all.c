@@ -38,7 +38,7 @@ void print_all(const char * const format, ...)
 				{
 					printf("%s(nill)", sep);
 				}
-				if (s)
+				else
 				{
 					printf("%s%s", sep, s);
 				}
