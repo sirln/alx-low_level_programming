@@ -1,8 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 
-int main (int argc, char **argv)
+/**
+  *main - start of program
+  *
+  *@argc: number of arguments
+  *@argv: array of arguments
+  *
+  *Return: exit value
+  *
+  */
+
+int main(int argc, char **argv)
 {
 	int l = 0;
 	unsigned char *opcodes;
