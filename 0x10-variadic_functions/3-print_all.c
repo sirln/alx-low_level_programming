@@ -29,7 +29,7 @@ void print_all(const char * const format, ...)
 				sep = ", ";
 				break;
 			case 'f':
-				printf("%s%f", sep, va_arg(args, float));
+				printf("%s%f", sep, va_arg(args, double));
 				sep = ", ";
 				break;
 			case 's':
