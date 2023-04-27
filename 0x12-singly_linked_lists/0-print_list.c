@@ -3,7 +3,7 @@
 /**
   *print_list -  prints all the elements of a list.
   *
-  *@h: list to be print
+  *@h: pointer to the first node of the list
   *
   *Return: number of nodes;
   *
