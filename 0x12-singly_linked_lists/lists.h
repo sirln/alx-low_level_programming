@@ -2,7 +2,7 @@
 #define LIST
 
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * struct list_l - singly linked list
  * @str: string - (malloc'ed string)
