@@ -13,7 +13,7 @@ size_t print_listint_safe(const listint_t *head)
 	size_t num_nodes = 0;
 	const listint_t *temp;
 
-	if (!head)
+	if (!head || !(head->next))
 		exit(98);
 
 	while (head)
@@ -29,7 +29,6 @@ size_t print_listint_safe(const listint_t *head)
 			exit(98);
 		}
 	}
-
 	return (num_nodes);
 }
 
