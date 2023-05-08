@@ -76,7 +76,7 @@ int main(int argc, char **argv)
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	from = open(argv[1], O_RDONLY);
 	f_read = read(from, file, 1024);
-	while (f_read > 0)
+	while (f_read)
 	{
 		if (from == -1 || f_read == -1)
 		{
@@ -90,7 +90,6 @@ int main(int argc, char **argv)
 			exit(99);
 		}
 		f_read = read(from, file, 1024);
-		to = open(argv[2], O_WRONLY | O_APPEND);
 	}
 	free(file);
 	close_file(from);
