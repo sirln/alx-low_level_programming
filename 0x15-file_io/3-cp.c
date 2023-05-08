@@ -34,16 +34,14 @@ int main(int argc, char **argv)
 	f_read = read(from, file, 1024);
 	while (f_read)
 	{
-		if (from == -1 || f_read -1)
+		if (from == -1)
 		{
-			free(file);
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
 		f_write = write(to, file, f_read);
 		if (to == -1 || f_write == -1)
 		{
-			free(file);
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
