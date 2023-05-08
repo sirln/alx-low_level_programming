@@ -48,7 +48,6 @@ int main(int argc, char **argv)
 			exit(99);
 		}
 		f_read = read(from, file, 1024);
-		to = open(argv[2], O_WRONLY | O_APPEND);
 	}
 	free(file);
 
