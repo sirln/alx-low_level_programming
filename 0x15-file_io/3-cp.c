@@ -76,9 +76,9 @@ int main(int argc, char **argv)
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	from = open(argv[1], O_RDONLY);
 	f_read = read(from, file, 1024);
-	while (f_read)
+	while (f_read > 0)
 	{
-		if (from == -1)
+		if (from == -1 || f_read == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
