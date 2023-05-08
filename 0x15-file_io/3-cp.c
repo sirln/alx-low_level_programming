@@ -29,31 +29,26 @@ int main(int argc, char **argv)
 
 	}
 
-	from = open(argv[1], O_RDONLY);
-	if (from == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		free(file);
-		exit(98);
-	}
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (to == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		free(file);
-		exit(99);
-	}
+	from = open(argv[1], O_RDONLY);
 	f_read = read(from, file, 1024);
 	while (f_read)
 	{
-		f_write = write(to, file, f_read);
-		if (f_write == -1)
+		if (from == -1 || f_read -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			free(file);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit(98);
+		}
+		f_write = write(to, file, f_read);
+		if (to == -1 || f_write == -1)
+		{
+			free(file);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
 		f_read = read(from, file, 1024);
+		to = open(argv[2], O_WRONLY | O_APPEND);
 	}
 	free(file);
 
