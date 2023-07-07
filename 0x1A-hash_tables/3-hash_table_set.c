@@ -33,7 +33,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			ht->array[index]->value = copy_value;
 			return (1);
 		}
-		index = (index + 1) % ht->size;
+		index++;
 	}
 
 	node = malloc(sizeof(hash_node_t));
