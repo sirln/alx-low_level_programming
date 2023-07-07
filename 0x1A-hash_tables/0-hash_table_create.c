@@ -3,9 +3,9 @@
 /**
   *hash_table_create - creating a hash table
   *
-  *@size : size of array
+  *@size: size of array
   *
-  *Return : pointer to the newly created hash table
+  *Return: pointer to the newly created hash table
   *
   */
 
