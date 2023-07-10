@@ -16,16 +16,19 @@ void hash_table_print(const hash_table_t *ht)
 		return;
 
 	printf("{");
-	while (index < ht->size && ht->size[index])
+	while (index < ht->size)
 	{
-		node = ht->array[index];
-		while (node)
+		if (ht->size[index])
 		{
-			if (l)
-				printf(", ");
-			printf("'%s': '%s'", node->key, node->value);
-			l = 1;
-			node = node->next;
+			node = ht->array[index];
+			while (node)
+			{
+				if (l)
+					printf(", ");
+				printf("'%s': '%s'", node->key, node->value);
+				l = 1;
+				node = node->next;
+			}
 		}
 		index++;
 	}
