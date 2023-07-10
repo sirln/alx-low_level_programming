@@ -31,6 +31,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			free(ht->array[index]->value);
 			ht->array[index]->value = copy_value;
+			if (ht->array[index]->value == NULL)
+				return (0);
 			return (1);
 		}
 		index++;
