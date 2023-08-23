@@ -6,4 +6,4 @@ NAME = school
 
 # Default rule
 all: $(OBJ)
-	$(CC) -o $@ $?
+	$(CC) $@ -o $^
