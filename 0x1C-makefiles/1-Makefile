@@ -3,5 +3,5 @@ CC = gcc
 SRC	= $(wildcard *.c)
 
 # Default rule
-all: $(SRC)
+all:
 	$(CC) $(SRC) -o school
