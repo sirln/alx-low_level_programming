@@ -1,6 +1,6 @@
 # Variables
 CC = gcc
-SRC	= $(wildcard *.c)
+SRC	= main.c school.c
 
 # Default rule
 all: school
