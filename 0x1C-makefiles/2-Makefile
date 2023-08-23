@@ -6,8 +6,4 @@ NAME = school
 
 # Default rule
 all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
-
-# clean rule
-clean:
-	rm -f all
+	$(CC) -o $@ $^
