@@ -5,15 +5,5 @@ OBJ = $(SRC:.c=.o)
 NAME = school
 
 # Default rule
-all: $(NAME) $(OBJ)
-	$(CC) -o $@ $^
-
-
-
-# Default rule
-#all: $(OBJ)
-#	$(CC) $(OBJ) -o $(NAME)
-
-# clean rule
-#clean:
-#	rm -f all
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
