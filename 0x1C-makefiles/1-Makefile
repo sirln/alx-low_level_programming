@@ -3,5 +3,7 @@ CC = gcc
 SRC	= $(wildcard *.c)
 
 # Default rule
-all:
-	$(CC) $(SRC) -o school
+all: school
+
+school: $(SRC)
+	$(CC) -o $@ $^
