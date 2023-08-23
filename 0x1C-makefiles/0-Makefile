@@ -1,0 +1,6 @@
+# Default rule
+all:
+	gcc main.c school.c -o school
+# clean rule
+clean:
+	rm -f all

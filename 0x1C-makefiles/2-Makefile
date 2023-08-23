@@ -1,0 +1,13 @@
+# Variables
+CC = gcc
+SRC	= $(wildcard *.c)
+OBJ = $(SRC:.c=.o)
+NAME = school
+
+# Default rule
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# clean rule
+clean:
+	rm -f all

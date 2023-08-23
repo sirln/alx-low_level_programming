@@ -1,0 +1,11 @@
+# Variables
+CC = gcc
+SRC	= $(wildcard *.c)
+
+# Default rule
+all:
+	$(CC) $(SRC) -o school
+
+# clean rule
+clean:
+	rm -f all
