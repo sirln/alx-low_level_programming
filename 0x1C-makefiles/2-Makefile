@@ -8,6 +8,12 @@ NAME = school
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
+
+
+# Default rule
+#all: $(OBJ)
+#	$(CC) $(OBJ) -o $(NAME)
+
 # clean rule
-clean:
-	rm -f all
+#clean:
+#	rm -f all
