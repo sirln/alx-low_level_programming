@@ -8,7 +8,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 # Default rule, builds school executable
 all: $(OBJ) m.h
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CC) @$(CFLAGS) $(OBJ) -o $(NAME)
 
 # Rule to delete all Emacs & Vim temp files along with the executable
 clean:
